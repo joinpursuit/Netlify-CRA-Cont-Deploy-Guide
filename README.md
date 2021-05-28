@@ -115,7 +115,7 @@ In order to continue to update your Netlify live site
 
 - On `main` branch, confirm your app works, while working on your app, be sure to work on another branch like `dev` and then only merge into `main` when your new features are working
 - `git add -A`
-- `git commit -m 'new feature added`
+- `git commit -m 'new feature added'`
 - `git push origin main`
 - give your site a few minutes to build
 - be sure to check the dashboard and live site to make sure everything is working OK
