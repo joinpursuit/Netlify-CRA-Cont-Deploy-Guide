@@ -12,6 +12,8 @@ Netlify has a feature where you can configure every push to the `main` branch on
 
 **IMPORTANT:** With continuous deployment, you only want working code to be on `main`, use branches like `dev` to build and confirm a working app before merging into `main`.
 
+**IMPORTANT:** Deploy early, deploy often. The best time to deploy is right after you run `create-react-app` - the less code you have written, the less work it will take to debug each deployment, in case there is an issue. 
+
 ## Netlify Settings
 
 Log onto Netlify and go to `Team Overview`, select `New site from Git`
@@ -108,3 +110,12 @@ Go to the `Deploys` tab and you can then click on the link to see your site life
 <br />
 <hr />
 <br />
+
+In order to continue to update your Netlify live site
+
+- On `main` branch, confirm your app works, while working on your app, be sure to work on another branch like `dev` and then only merge into `main` when your new features are working
+- `git add -A`
+- `git commit -m 'new feature added`
+- `git push origin main`
+- give your site a few minutes to build
+- be sure to check the dashboard and live site to make sure everything is working OK
